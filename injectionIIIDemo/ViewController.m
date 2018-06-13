@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    Xcode 第一次启动 显示红色
+    self.view.backgroundColor = [UIColor redColor];
+}
+//执行快捷键： COMMAND + S 就可看到 变蓝色了
+
+- (void)injected
+{
+    NSLog(@"I've been injected: %@", self);
+    self.view.backgroundColor = [UIColor blueColor];
 }
 
 
